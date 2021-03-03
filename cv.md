@@ -10,8 +10,7 @@
 
 ## Summary:
 #### At the moment I am studying HTML, css, java script and python(ML Intro).I devote all my free time to this.I want to figure it out as much as possible on my own with the help of online courses and educational literature.
- 
- 
+  
 ## My Skills:
 * FORTRAN 77
 * HTML
@@ -26,7 +25,6 @@
 ## Experience:
 ##### I havn't experience in commercial development, only the basics of Fortran 77, JS, ReactJS.
 ##### My github page: [my first little project in ReactJS](https://vvk1978.github.io/react-game/)
-
  
 ## Education: 
 * 1995-2000  SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL - Electrical Engineer (electric drive)

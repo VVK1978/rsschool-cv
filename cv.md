@@ -9,7 +9,7 @@
 #### github: [@VVK1978](https://github.com/VVK1978)
 
 ## Summary:
-#### At the moment I am studying HTML, css, java script and python(ML Intro).I devote all my free time to this.I want to figure it out as much as possible on my own with the help of online courses and educational literature.
+#### At the moment I am studying HTML, CSS, JS and Python(ML Intro).I devote all my free time to this.I want to figure it out as much as possible on my own with the help of online courses and educational literature.
   
 ## My Skills:
 * FORTRAN 77

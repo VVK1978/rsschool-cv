@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="burger.css">
   <title>Document</title>
 </head>
 
@@ -14,37 +15,37 @@
       <nav class="header-navigation">
         <ul class="navigation-menu">
           <li class="navigation-menu__item">
-            <a href="" class="navigation-menu__link">
+            <a href="#skills" class="navigation-menu__link">
               Skills
             </a>
             <div class="link-dot"></div>
           </li>
           <li class="navigation-menu__item">
-            <a href="" class="navigation-menu__link">
+            <a href="#projects" class="navigation-menu__link">
               Projects
             </a>
             <div class="link-dot"></div>
           </li>
           <li class="navigation-menu__item">
-            <a href="" class="navigation-menu__link">
+            <a href="#education" class="navigation-menu__link">
               Education
             </a>
             <div class="link-dot"></div>
           </li>
           <li class="navigation-menu__item">
-            <a href="" class="navigation-menu__link">
+            <a href="#code" class="navigation-menu__link">
               Code
             </a>
             <div class="link-dot"></div>
           </li>
           <li class="navigation-menu__item">
-            <a href="" class="navigation-menu__link">
+            <a href="#video" class="navigation-menu__link">
               Video
             </a>
             <div class="link-dot"></div>
           </li>
           <li class="navigation-menu__item">
-            <a href="" class="navigation-menu__link">
+            <a href="#contacts" class="navigation-menu__link">
               Contacts
             </a>
             <div class="link-dot"></div>
@@ -53,75 +54,113 @@
       </nav>
     </header>
     <aside class="burger">
-      <input type="checkbox" id="menu__toggle">
-      <nav class="burger-navigation">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-        </ul>
-      </nav>
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle" id="close__btn">
+        <span></span>
+      </label>
+      <ul class="menu__box">
+        <li class="navigation__menu-burger">
+          <a class="menu__item-burger" href="#skills">Skills</a>
+          <div class="link-dot"></div>
+        </li>
+        <li class="navigation__menu-burger">
+          <a class="menu__item-burger" href="#projects">Projects</a>
+          <div class="link-dot"></div>
+        </li>
+        <li class="navigation__menu-burger">
+          <a class="menu__item-burger" href="#education">Education</a>
+          <div class="link-dot"></div>
+        </li>
+        <li class="navigation__menu-burger">
+          <a class="menu__item-burger" href="#code">Code</a>
+          <div class="link-dot"></div>
+        </li>
+        <li class="navigation__menu-burger">
+          <a class="menu__item-burger" href="#video">Video</a>
+          <div class="link-dot"></div>
+        </li>
+        <li class="navigation__menu-burger">
+          <a class="menu__item-burger" href="#contacts">Contacts</a>
+          <div class="link-dot"></div>
+        </li>
+      </ul>
     </aside>
     <main>
+      <h1 class="visually-hidden">Viktar Kazlou - Junior Front-End Developer Resume</h1>
       <div class="main-wrapper">
         <section class="about">
-          <div class="card-flip">
-            <div class="card-flip__container">
-              <div class="card-front">
-                <img src="./img/IMG1.png" alt="avatar" class="card-image">
-              </div>
-              <div class="card-back">
-                <h3>Hi, my name is Viktar.</h3>
-                <h4>I`m junior frontend developer.</h4>
-                <h5>It`s css card rotate ;)</h5>
+          <div class="section-wrapper">
+            <div class="card-flip">
+              <div class="card-flip__container">
+                <div class="card-front">
+                  <img src="./img/IMG1.png" alt="avatar" class="card-image">
+                </div>
+                <div class="card-back">
+                  <h3>Hi, my name is Viktar.</h3>
+                  <h4>I`m junior frontend developer.</h4>
+                  <h5>e-mail: cdroom@mail.ru</h5>
+                </div>
               </div>
             </div>
+            <h2>About me</h2>
+            <h4>At the moment I am studying HTML, CSS, JS and Python.I
+              devote all my free time to this.I want to figure it out as much as
+              possible on my own with the help of online courses and educational
+              literature.</h4>
           </div>
-          <h2>About me</h2>
-          <h4>At the moment I am studying HTML, CSS, JS and Python.I
-            devote all my free time to this.I want to figure it out as much as
-            possible on my own with the help of online courses and educational
-            literature.</h4>
-          <h4>
-          </h4>
         </section>
         <section class="skills">
-          <h2>Skills</h2>
+          <div class="section-wrapper">
+            <a name="skills"></a>
+            <h2> Skills </h2>
+            <div class="skills-wrapper">
+              <p class="skills-text">HTML</p>
+              <p class="skills-text">CSS</p>
+              <p class="skills-text">Java Script</p>
+              <p class="skills-text">Python</p>
+              <p class="skills-text">React JS</p>
+              <p class="skills-text">Redux</p>
+              <p class="skills-text">Figma</p>
+              <p class="skills-text">VS Code</p>
+              <p class="skills-text">Flex,Grid</p>
+              <p class="skills-text">Git</p>
+            </div>
+          </div>
         </section>
         <section class="projects">
-          <h2>Projects</h2>
+          <a name="projects"></a>
+          <h2> Projects </h2>
         </section>
-        <section>
-          <h2>Education</h2>
+        <section class="education">
+          <div class="section-wrapper">
+            <a name="education"></a>
+            <h2> Education </h2>
+            <p>
+              1995-2000 SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL - Electrical
+              Engineer (electric drive)
+            </p>
+            <p>
+              2002-2003 Belarusian Trade and Economic University of Consumer
+              Cooperatives - Economist Manager
+            </p>
+            <p>
+              RS School 2020-2021 (JS/FE, MACHINE LEARNING Intro, ReactJS)
+            </p>
+            <img src="./img/react2021q1.png" alt="certificate" class="certificate-image">
+          </div>
         </section>
         <section class="code">
-          <h2>Code</h2>
+          <a name="code"></a>
+          <h2> Code </h2>
         </section>
         <section class="video">
-          <h2>
-            Video
-          </h2>
+          <a name="video"></a>
+          <h2> Video </h2>
         </section>
-        <section>
-          <h2>Contacts</h2>
+        <section class="contacts">
+          <a name="contacts"></a>
+          <h2> Contacts </h2>
         </section>
-      </div>
-
-      <div>
-        <ul>
-          <li>FORTRAN77</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Basic JS</li>
-          <li>VS Code</li>
-          <li>Git</li>
-          <li>Python</li>
-          <li>JupyterNotebook</li>
-          <li>ReactJS</li>
-        </ul>
       </div>
       <div>
         <h2>Experience</h2>
@@ -133,25 +172,6 @@
         </p>
       </div>
       <div>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            1995-2000 SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL - Electrical
-            Engineer (electric drive)
-          </li>
-          <li>
-            2002-2003 Belarusian Trade and Economic University of Consumer
-            Cooperatives - Economist Manager
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h2>Online Education</h2>
-        <ul>
-          <li>
-            RS School 2020-2021 (JS/FE, MACHINE LEARNING Intro, ReactJS)
-          </li>
-        </ul>
         <h2>English</h2>
         <ul>
           <li>A2 (Pre-intermediate)</li>
@@ -161,7 +181,7 @@
   </div>
   <footer class="footer">
     <a href="https://rs.school/" class="footer__link">
-      RS SCHOOL 2021
+      2021
       <img src="./img/rs_school.svg" class="footer__img" alt="RS-School" />
     </a>
   </footer>

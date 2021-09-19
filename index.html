@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="burger.css">
-  <title>Document</title>
+  <link rel="alternate stylesheet" title="A 11 Y Dark" href="styles/a11y-dark.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <title>Viktar Kazlou</title>
 </head>
 
 <body>
@@ -146,12 +150,26 @@
             <p>
               RS School 2020-2021 (JS/FE, MACHINE LEARNING Intro, ReactJS)
             </p>
+            <p>
+              My English level is A2 (Pre-intermediate)
+            </p>
             <img src="./img/react2021q1.png" alt="certificate" class="certificate-image">
           </div>
         </section>
         <section class="code">
-          <a name="code"></a>
-          <h2> Code </h2>
+          <div class="section-wrapper">
+            <a name="code"></a>
+            <h2> Code </h2>
+            <pre>
+          <code class="language-javascript">
+            function absentVowel(x) 
+            {
+              const array = ['a', 'e', 'i', 'o', 'u'];
+              return array.findIndex((value) => !x.includes(value));
+            }
+          </code>
+          </pre>
+          </div>
         </section>
         <section class="video">
           <a name="video"></a>
@@ -170,12 +188,6 @@
           <a href="https://vvk1978.github.io/react-game/" class="link">
             My first little project in ReactJS.</a>
         </p>
-      </div>
-      <div>
-        <h2>English</h2>
-        <ul>
-          <li>A2 (Pre-intermediate)</li>
-        </ul>
       </div>
     </main>
   </div>

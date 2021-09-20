@@ -1,18 +1,24 @@
 const closeBtn = document.getElementById('close__btn');
-const burger = document.querySelector('.burger');
+const menuToggle = document.getElementById('menu__toggle');
+const menuBurger = document.querySelector('.menu__box');
 closeBtn.addEventListener('click', () => {
-  burger.classList.add('opened');
+  menuBurger.classList.toggle('opened');
 });
 const itemBurger = document.querySelectorAll('.navigation__menu-burger');
 itemBurger.forEach((element) =>
   element.addEventListener('click', (e) => {
-    closeBtn.click();
+    if (e.target.classList.value === 'menu__item-burger') {
+      menuBurger.classList.toggle('opened');
+      menuToggle.click();
+    }
   })
 );
 document.body.addEventListener('click', (e) => {
-  if (closeBtn.classList.value[1] === 'active' || e.y > 468) {
-    burger.classList.remove('opened');
-    closeBtn.click();
+  if (menuBurger.classList.value === 'menu__box opened') {
+    if (e.y > 480) {
+      menuBurger.classList.toggle('opened');
+      menuToggle.click();
+    }
   }
 });
 const projectImageSrc = ['./img/oz.png', './img/pf.png', './img/vp.png', './img/efk.png'];

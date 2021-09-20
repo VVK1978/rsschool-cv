@@ -4,6 +4,10 @@ body {
 	font-size: 16px;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 *,
 *:before,
 *:after {
@@ -11,7 +15,7 @@ body {
 }
 
 p {
-	font-size: 24px;
+	font-size: 18px;
 	letter-spacing: 2px;
 }
 
@@ -142,6 +146,10 @@ li {
 	border-radius: 10px;
 }
 
+.contact-item {
+	margin: 4px 0;
+}
+
 h2,
 h3 {
 	font-size: 22px;
@@ -152,8 +160,12 @@ h4 {
 	font-weight: normal;
 	max-width: 800px;
 	width: 100%;
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 2px;
+}
+
+a {
+	color: white;
 }
 
 .section-wrapper {
@@ -164,10 +176,12 @@ h4 {
 	text-align: center;
 }
 
+ul {
+	padding: 0;
+}
 
-
-.skills-wrapper {
-	max-height: 190px;
+.skills-list {
+	max-height: 296px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -175,15 +189,19 @@ h4 {
 	flex-wrap: wrap;
 }
 
-.skills-text {
+.skills-item {
 	max-width: 50%;
 	width: 100%;
-	font-size: 24px;
-	margin: 5px 0;
 	animation: color-font-reverse 4s infinite ease-in-out;
 }
 
-.skills-text:nth-child(2n + 1) {
+.skills-text {
+	font-size: 24px;
+	margin: 0;
+	text-align: center;
+}
+
+.skills-item:nth-child(2n + 1) {
 	color: turquoise;
 	animation: color-font 4s infinite ease-in-out;
 }
@@ -217,15 +235,20 @@ h4 {
 }
 
 .slider {
-	height: 500px;
+	height: 450px;
 	position: relative;
 }
 
-.slider-image {
+.slide-image {
 	max-width: 100%;
 	width: 100%;
 	height: 380px;
 	margin-top: 16px;
+}
+
+.slide-image-description {
+	color: black;
+	font-size: 16px;
 }
 
 .container-slider-dot {
@@ -262,6 +285,7 @@ h4 {
 	max-width: 600px;
 	width: 100%;
 	display: block;
+	margin-bottom: 64px;
 }
 
 .overlay {
@@ -269,7 +293,7 @@ h4 {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #008CBA;
+	background-color: turquoise;
 	overflow: hidden;
 	max-width: 600px;
 	margin: 0 auto;
@@ -316,20 +340,32 @@ pre {
 	margin: 0 auto;
 	text-align: left;
 	font-size: 20px;
+	background-color: black;
+}
+
+.video-container {
+	max-width: 100%;
+	width: 100%;
+}
+
+.video-player {
+	max-width: 800px;
+	width: 100%;
+	height: 30vmax;
 }
 
 .footer {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	height: 3rem;
+	height: 64px;
 }
 
 .footer__link {
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 16px;
 	font-weight: 300;
 	color: black;
 	transition: 0.3s;
@@ -341,8 +377,8 @@ pre {
 }
 
 .footer__img {
-	width: 6rem;
-	height: 2rem;
+	width: 36px;
+	height: 18px;
 }
 
 @media screen and (max-width: 767px) {
@@ -357,8 +393,7 @@ pre {
 	}
 
 	pre {
-
-		white-space: break-spaces; 
+		white-space: break-spaces;
 	}
 
 	.language-javascript.hljs {
@@ -385,4 +420,5 @@ pre {
 		max-width: 320px;
 		width: 100%;
 	}
+
 }

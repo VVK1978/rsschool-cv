@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="burger.css">
-	<link rel="alternate stylesheet" title="A 11 Y Dark" href="styles/a11y-dark.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
@@ -102,45 +101,84 @@
 								<div class="card-back">
 									<h3>Hi, my name is Viktar.</h3>
 									<h4>I`m junior frontend developer.</h4>
-									<h5>e-mail: cdroom@mail.ru</h5>
+									<ul>
+										<li class="contact-item">
+											<a href="tel:+375-29-6627184">tel: +375-29-6627184 (viber)</a>
+										</li>
+										<li class="contact-item">
+											<a href="mailto:cdroom@mail.ru">e-mail: cdroom@mail.ru</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 						<h2>About me</h2>
-						<h4>At the moment I am studying HTML, CSS, JS and Python.I
+						<h4>At the moment I am studying HTML, CSS, JS, React JS and Python.I
 							devote all my free time to this.I want to figure it out as much as
 							possible on my own with the help of online courses and educational
 							literature.</h4>
 					</div>
 				</section>
-				<section class="skills">
+				<section class="skills" id="skills">
 					<div class="section-wrapper">
-						<a name="skills"></a>
 						<h2> Skills </h2>
-						<div class="skills-wrapper">
-							<p class="skills-text">HTML</p>
-							<p class="skills-text">CSS</p>
-							<p class="skills-text">Java Script</p>
-							<p class="skills-text">Python</p>
-							<p class="skills-text">React JS</p>
-							<p class="skills-text">Redux</p>
-							<p class="skills-text">Figma</p>
-							<p class="skills-text">VS Code</p>
-							<p class="skills-text">Flex,Grid</p>
-							<p class="skills-text">Git</p>
-						</div>
+						<ul class="skills-list">
+							<li class="skills-item">
+								<p class="skills-text">HTML</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">CSS</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">Java Script</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">Python</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">React JS</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">Redux</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">Figma</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">VS Code</p>
+
+							</li>
+							<li class="skills-item">
+								<p class="skills-text">Flex,Grid</p>
+							</li>
+
+							<li class="skills-item">
+								<p class="skills-text">Git</p>
+							</li>
+						</ul>
 					</div>
 				</section>
-				<section class="projects">
+				<section class="projects" id="projects">
 					<div class="section-wrapper">
-						<a name="projects"></a>
 						<h2> Projects </h2>
 						<p>I havn't experience in commercial development and
 							in this part you can see my projects from RS School.</p>
 						<div class="slider">
-							<a title="Click me" class="project-link"
+							<a title="Click me" class="project-link" target="_blank"
 								href="https://rolling-scopes-school.github.io/vvk1978-JSFE2021Q1/online-zoo/pages/main/">
-								<img src="./img/oz.png" alt="" class="slider-image">
+								<figure>
+									<img src="./img/oz.png" alt="project-image" class="slide-image">
+									<figcaption class="slide-image-description">
+										Project - "Online ZOO". HTML,CSS,JS.
+									</figcaption>
+								</figure>
 							</a>
 							<div class="container-slider-dot">
 								<div class="slider-dot active" data-dot=0></div>
@@ -149,12 +187,10 @@
 								<div class="slider-dot" data-dot=3></div>
 							</div>
 						</div>
-
 					</div>
 				</section>
-				<section class="education">
+				<section class="education" id="education">
 					<div class="section-wrapper">
-						<a name="education"></a>
 						<h2> Education </h2>
 						<p>
 							1995-2000 SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL - Electrical
@@ -181,9 +217,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="code">
+				<section class="code" id="code">
 					<div class="section-wrapper">
-						<a name="code"></a>
 						<h2> Code </h2>
 						<div class="overlay-container">
 							<pre>
@@ -222,22 +257,37 @@ function reducer(reducer) {
 						</div>
 					</div>
 				</section>
-				<section class="video">
-					<a name="video"></a>
-					<h2> Video </h2>
+				<section class="video" id="video">
+					<div class="section-wrapper">
+						<h2> Video </h2>
+						<div class="video-container">
+							<iframe class="video-player" src="https://www.youtube.com/embed/H4lnglQ4erk" title="YouTube video player"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+					</div>
 				</section>
-				<section class="contacts">
-					<a name="contacts"></a>
-					<h2> Contacts </h2>
+				<section class="contacts" id="contacts">
+					<div class="section-wrapper">
+						<h2> Contacts </h2>
+						<ul class="contacts-list">
+							<li class="contact-item">
+								E-mail: cdroom@mail.ru
+							</li>
+							<li class="contact-item">Mobile/viber: +375 29 662 71 84</li>
+						</ul>
+						<h4>Ready to learn interesting technologies with interesting people!)</h4>
+					</div>
 				</section>
 			</div>
 		</main>
 	</div>
 	<footer class="footer">
-		<a href="https://rs.school/" class="footer__link">
+		<a href="https://rs.school/" class="footer__link" target="_blank">
 			2021
 			<img src="./img/rs_school.svg" class="footer__img" alt="RS-School" />
 		</a>
+		<a href="https://github.com/VVK1978/rsschool-cv" class="footer__link" target="_blank">Viktar Kazlou Github</a>
 	</footer>
 	<script src="script.js"></script>
 </body>

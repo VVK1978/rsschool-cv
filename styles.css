@@ -237,6 +237,7 @@ ul {
 .slider {
 	height: 450px;
 	position: relative;
+	display: block;
 }
 
 .slide-image {
@@ -404,16 +405,20 @@ pre {
 		font-size: 14px;
 	}
 
-	.slider {
-		height: 420px;
+	figure {
+		margin: 0;
+		position: relative;
+		display: block;
 	}
 
-	.slider-image {
-		overflow: hidden;
-		max-width: 100%;
-		width: auto;
-		height: 60%;
-		margin-top: 16px;
+	.slider {
+		max-height: 35%;
+		height: 100%;
+	}
+
+	.slide-image {
+		object-fit: fill;
+		height: 100%;
 	}
 
 	.overlay-text {

@@ -181,7 +181,7 @@ ul {
 }
 
 .skills-list {
-	max-height: 296px;
+	max-height: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
